@@ -1,0 +1,296 @@
+@charset "utf-8";
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{font-family: "Noto Sans KR";}
+body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+    height: 13%; /* 스크롤바의 길이 */
+    background: #231815; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #fff; /*스크롤바 뒷 배경 색상*/
+    border-left: 2px solid #ad9892;
+    box-sizing: border-box;
+}
+.cursor{position: fixed; pointer-events: none; z-index: 99999;}
+.cursor > img{width: 45px; height: auto;}
+
+@keyframes ani1{
+    0%{opacity: 0; transform: translateY(9px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+.top{display: none;}
+.top > img{width: 80px; height: auto; position: fixed; z-index: 999999; bottom: 51px; right: 51px;}
+header{background-color: #ffdc42; position: fixed;}
+header > section{background: url("../img/header_yellow_img.jpg") no-repeat center bottom; background-size: contain; width: 100vw; height: 936px; animation: ani1 1.5s;}
+header > section > a{display: block; width: 300px; height: 76px; margin: auto; padding-top: 50px; text-indent: -9999px; animation: ani1 1s;}
+header > section > a > h1{background: url("../img/main_logo.png") no-repeat center center; width: 300px; height: 76px;}
+header > section > ul
+{max-width: 1360px; display: flex; flex-flow: row wrap; justify-content: space-between; margin: 80px auto;
+}
+header > section > ul > li:nth-of-type(1){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1s;}
+header > section > ul > li:nth-of-type(2){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.2s;}
+header > section > ul > li:nth-of-type(3){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.4s;}
+header > section > ul > li:nth-of-type(4){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.6s;}
+header > section > ul > li:nth-of-type(5){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.8s;}
+header > section > ul > li > a{display: block; transition: all .15s;}
+header > section > ul > li:hover > a{transform: translateY(-15px);}
+header > section > ul > li:active > a{transform: translateY(-10px);}
+header > section > ul > li > a > img{width: 170px; height: auto;}
+
+header > section > .sns{
+    width: 260px; display: flex; justify-content: space-between; position: absolute; top: 50px; right: 50px; animation: ani1 .8s; animation-fill-mode: both; animation-delay: 2s;
+}
+header > section > .sns > a{display: block; width: 40px; height: 40px; text-indent: -9999px; transition: all .3s;}
+header > section > .sns > a:nth-of-type(1){background: url("../sns/sns_facebook_clean.png") no-repeat center center; background-size: cover;}
+header > section > .sns > a:nth-of-type(2){background: url("../sns/sns_twt_clean.png") no-repeat center center; background-size: cover;}
+header > section > .sns > a:nth-of-type(3){background: url("../sns/sns_insta_clean.png") no-repeat center center; background-size: cover;}
+header > section > .sns > a:nth-of-type(4){background: url("../sns/sns_youtube_clean.png") no-repeat center center; background-size: cover;}
+header > section > .sns > a:nth-of-type(5){background: url("../sns/sns_tiktok_clean.png") no-repeat center center; background-size: cover;}
+header > section > .sns > a:hover{opacity: .7;}
+header > section > .sns > a:active{opacity: .7; filter: brightness(.85);}
+
+h2{font-size: 40px; font-weight: 900; text-align: center; padding-top: 175px; color: #231815;}
+
+main{position: relative; top: 936px;}
+main > .about{width: 100vw; height: 1241px; background: url("../img/Peanuts-ComicBG-min.jpg") no-repeat center center; background-size: cover; border-radius: 90px 90px 0 0;}
+main > .about > img{
+    width: 826px; height: auto; outline: 20px solid #fff; box-sizing: border-box; margin: auto; border-radius: 30px; margin-top: 92px; margin-bottom: 64px;
+    box-shadow: 20px 20px 20px rgba(1, 1, 1, 0.25);
+}
+
+/* about */
+main > .about > p{width: 981px; font-size: 16px; text-indent: 16px; text-align: justify; margin: auto; color: #231815;}
+main > .about > p:nth-of-type(1){margin-bottom: 15px;}
+
+main > div:nth-of-type(1){position: relative;}
+main > div:nth-of-type(1){bottom: 105px;}
+main > div:nth-of-type(1) > img{height: 142px; width: auto;}
+main > div:nth-of-type(1) > img:nth-of-type(1){position: absolute; left: 136px;}
+main > div:nth-of-type(1) > img:nth-of-type(2){position: absolute; right: 87px;}
+
+main > div:nth-of-type(2){width: 100vw; height: 385px; background: #ededee; display: flex; justify-content: center; align-items: center;}
+main > div:nth-of-type(2) > .writer{width: 778px; height: 306px; background: #fff; display:inline-flex; justify-content:space-evenly; align-items: center;}
+main > div:nth-of-type(2) > .writer > img{width: 230px; height: 296px; }
+main > div:nth-of-type(2) > .writer > div{ padding:0 30px; height: 306px;}
+main > div:nth-of-type(2) > .writer > div > p{color: #231815;}
+main > div:nth-of-type(2) > .writer > div > .wn{font-size: 16px; font-weight: 700; margin-bottom: 26px; margin-top: 40px;}
+main > div:nth-of-type(2) > .writer > div > .wi{font-size: 16px; text-align: justify; text-indent: 16px; width: 474px;}
+
+
+main > .character{width: 100vw; height: 1370px; background: #EEF2FA;} /* 캐릭 character */
+main > .character > h2{margin-bottom: 437px;}
+
+main > .character > section{width: 600px; height: 304px; margin: 0 auto;}
+main > .character > section > img{width: 296px; height: auto; outline: 8px solid #ffdc42; box-sizing: border-box; position: absolute; display:none;}
+main > .character > section > img:nth-of-type(1){display:block;}
+
+main > .character > div{position: relative; margin: 0 auto; width: 594px; height: 304px; top: -304px;}
+main > .character > div > .info{  width:50%;   height:50%; margin-left: 53%; }
+main > .character > div > .info > h3, main > .character > div > .info > .time{margin-bottom: 8px;}
+main > .character > div > a{position: absolute; transition: all .15s;}
+main > .character > div > a:hover{transform: translateY(-15px);}
+main > .character > div > a:active{transform: translateY(-10px); filter: brightness(.85);}
+main > .character > div > a:nth-of-type(1){top: -328px; left: 50px;}
+main > .character > div > a:nth-of-type(1) > img{width: 210px; height: auto;}
+main > .character > div > a:nth-of-type(2){top: -250px; left: 319px;}
+main > .character > div > a:nth-of-type(2) > img{width: 190px; height: auto;}
+main > .character > div > a:nth-of-type(3){top: -285px; left: 539px;}
+main > .character > div > a:nth-of-type(3) > img{width: 201px; height: auto;}
+main > .character > div > a:nth-of-type(4){top: -8px; left: 695px;}
+main > .character > div > a:nth-of-type(4) > img{width: 187px; height: auto;}
+main > .character > div > a:nth-of-type(5){top: 234px; left: 616px;}
+main > .character > div > a:nth-of-type(5) > img{width: 185px; height: auto;}
+main > .character > div > a:nth-of-type(6){top: 392px; left: 399px;}
+main > .character > div > a:nth-of-type(6) > img{width: 181px; height: auto;}
+main > .character > div > a:nth-of-type(7){top: 422px; left: 171px;}
+main > .character > div > a:nth-of-type(7) > img{width: 145px; height: auto;}
+main > .character > div > a:nth-of-type(8){top: 383px; left: -153px;}
+main > .character > div > a:nth-of-type(8) > img{width: 202px; height: auto;}
+main > .character > div > a:nth-of-type(9){top: 209px; left: -309px;}
+main > .character > div > a:nth-of-type(9) > img{width: 196px; height: auto;}
+main > .character > div > a:nth-of-type(10){top: 21px; left: -333px;}
+main > .character > div > a:nth-of-type(10) > img{width: 180px; height: auto;}
+main > .character > div > a:nth-of-type(11){top: -221px; left: -261px;}
+main > .character > div > a:nth-of-type(11) > img{width: 251px; height: auto;}
+
+
+main > .series{width: 100vw; height: 2056px; background: #fff6fa;} /* 시리즈 series */
+main > .series > h2{margin-bottom: 104px;}
+main > .series > .se{width: 1334px; margin: auto; display: flex; flex-flow: row wrap; justify-content: space-between;}
+main > .series > .se > div{width: 425px; margin-bottom: 133px;}
+main > .series > .se > div > a{width: 425px; height: 240px;}
+main > .series > .se > div > a > img{width: 425px; height: auto; margin-bottom: 20px; transition: all .3s;}
+main > .series > .se > div > a:hover > img{transform: scale(1.05);}
+main > .series > .se > div > a:active > img{ filter: brightness(.85);}
+main > .series > .se > div > .title{font-size: 16px; font-weight: 700; text-align: center; margin-bottom: 20px;}
+main > .series > .se > div > p{font-size: 16px; text-align: justify; color: #231815;}
+main > .series > .se > div > p:nth-of-type(2){width: 420px; margin: 0 auto;}
+main > .series > .se > img{width: 750px; height: auto; opacity: .4;}
+
+main > .gall{width: 100vw; height: 1600px; background: #fff9d2;} /* 갤러리 gall */
+main > .gall > h2{margin-bottom: 138px;}
+
+main > .gall > div{width: 1685px; margin: 0 auto; display: flex; justify-content: space-between; margin-bottom: 122px;}
+main > .gall > div > div > a > img{width: 393px; height: auto; outline: 5px solid #fff; box-sizing: border-box; margin-bottom: 30px;}
+
+main > .gall > a{width: 458px; height: 99px; display: block; margin: auto;}
+main > .gall > a > img{width: 458px; height: auto; margin: 0 auto; transition: all .15s;}
+main > .gall > a:hover > img{transform: translateX(5%);}
+main > .gall > a:active > img{ filter: brightness(.85);}
+
+
+main > .store{width: 100vw; height: 2700px; background: #f7f6ef; position: relative;} /* 스토어 store */
+main > .store > h2{margin-bottom: 171px;}
+main > .store > div{width: 1281px; margin: 0 auto;}
+main > .store > div > h3{font-size: 40px; width: 268px; display: flex; justify-content: space-between; line-height: 127px; margin-bottom: 49px;}
+main > .store > div:nth-of-type(1) > h3{width: 314px;}
+main > .store > div > h3 > img{width: 124px; height: 124px;}
+
+
+
+.product_wrap{width: 1170px; display: flex; justify-content: space-between; margin: 0 auto; margin-bottom:71px;}
+.product_wrap > .product:hover p{text-decoration: underline;}
+.product_wrap figure > img{width: 280px; height: 280px;}
+.product_wrap figure > figcaption{width: 280px; height: 118px; background: #fff;}
+.product_wrap figure > figcaption > p{text-decoration: none; color: #231815; text-align: center; margin: auto;}
+.product_wrap figure > figcaption > p:nth-of-type(1){padding-top: 26px; margin-bottom: 12px; font-weight: 700; max-width: 268px;}
+
+main > .store > a{width: 458px; height: 99px; display: block; margin: auto;}
+main > .store > a > img{width: 458px; height: auto; margin-top: 162px; transition: all .15s;}
+main > .store > a:hover > img{transform: translateX(5%);}
+main > .store > a:active > img{filter: brightness(.85);}
+
+
+footer > section{background: url(../img/Peanuts-ComicBG-min.jpg) no-repeat; background-size: cover; width: 100vw; height: 444px;  position:relative; top:936px; }
+footer > section > img{width: 736px; height: auto;  position: absolute;  left:50%;  transform:translateX(-50%);  bottom: 123px; z-index: 1;}
+footer > section > div{background: #9CCE9B; width: 100vw; height: 147px; display: block; position: absolute; margin-top: 297px;}
+footer > section > div > div{width: 1096px; margin: auto; display: flex; justify-content: space-between; align-items: center;}
+footer > section > div > div > a{color: #fff; text-align: center; margin-top: 42px;}
+footer > section > div > div > a:nth-of-type(1){
+    display: block; width: 157px; height: 72px; background: url("../img/pww-logo.png") no-repeat center center; background-size: cover; text-indent: -9999px;
+}
+
+
+/* ----------------------- 태블릿pc -------------------------- */
+@media screen and (max-width: 1366px){
+    .cursor{display: none;}
+    .top > img{width: 65px; height: auto; bottom: 20px; right: 20px;}
+    header{background-color: #ffdc42; width: 100vw;}
+    header > section > ul{max-width: 1296px; display: flex; flex-flow: row wrap; justify-content: space-between; margin: 80px auto;}
+    h2{font-size: 40px;}
+
+    main > div:nth-of-type(1) > img:nth-of-type(1){left: 58px;}
+    main > div:nth-of-type(1) > img:nth-of-type(2){right: 7px;}
+
+    main > .gall{height: 2307px;}
+    main > .gall > div{width: 824px; flex-flow: row wrap;}
+}
+
+
+/* ----------------------- 모바일 -------------------------- */
+@media screen and (max-width: 640px){
+    .cursor{display: none;}
+    .top > img{width: 50px; height: auto; bottom: 20px; right: 20px;}
+
+    header > section{height: 716px;}
+    header > section > ul{max-width: 355px; justify-content: space-evenly; margin-top: 137px;}
+    header > section > ul > li:nth-of-type(1){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1s;}
+    header > section > ul > li:nth-of-type(2){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.2s;}
+    header > section > ul > li:nth-of-type(3){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.4s;}
+    header > section > ul > li:nth-of-type(4){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.6s;}
+    header > section > ul > li:nth-of-type(5){animation: ani1 .2s; animation-fill-mode: both; animation-delay: 1.8s;}
+    header > section > ul > li > a{display: block; transition: all .15s; margin-bottom: 16px;}
+    header > section > ul > li:hover > a{transform: translateY(-15px);}
+    header > section > ul > li:active > a{transform: translateY(-10px);}
+    header > section > ul > li > a > img{width: 100px; height: auto;}
+    
+    header > section > .sns{top: 168px; right: 50%; margin-right: -130px;}
+
+    h2{font-size: 36px;}
+
+    main{top: 717px;}
+    main > .about > img{width: 360px; height: auto;}
+    main > .about > p{width: 311px;}
+
+    main > div:nth-of-type(1) > img{height: 80px; width: auto; top: 43px;}
+    main > div:nth-of-type(1) > img:nth-of-type(1){left: 13px;}
+    main > div:nth-of-type(1) > img:nth-of-type(2){right: 14px;}
+
+    main > div:nth-of-type(2){width: 100vw; height: 900px;}
+    main > div:nth-of-type(2) > .writer{width: 240px; height: 760px; display: flex; flex-flow: row wrap; align-content: flex-start;}
+    main > div:nth-of-type(2) > .writer > img{margin-top: 5px;}
+    main > div:nth-of-type(2) > .writer > div > p{font-size: 15px;}
+    main > div:nth-of-type(2) > .writer > div > .wn{font-size: 16px; font-weight: 700; margin-bottom: 20px; margin-top: 10px; width: ;}
+    main > div:nth-of-type(2) > .writer > div > .wi{width: 210px;}
+
+    main > .character{width: 100vw; height: 1278px; background: #EEF2FA;}
+    main > .character > h2{margin-bottom:84px;}
+    main > .character > section{width: 296px; height: 508px; margin: 0 auto;}
+    main > .character > section > img{width: 296px; height: auto; outline: 8px solid #ffdc42; box-sizing: border-box; position: absolute;}
+
+    main > .character > div{width: 296px; height: 508px; top: -500px;}
+    main > .character > div > .info{  width:100%; margin: auto; position: absolute; top: 320px;}
+    main > .character > div > .info > h3, main > .character > div > .info > .time{margin-bottom: 8px;}
+    main > .character > div > a:nth-of-type(1){top: 539px; left: 24px;}
+    main > .character > div > a:nth-of-type(1) > img{width: 89px; height: auto;}
+    main > .character > div > a:nth-of-type(2){top: 571px; left: 127px;}
+    main > .character > div > a:nth-of-type(2) > img{width: 82px; height: auto;}
+    main > .character > div > a:nth-of-type(3){top: 547px; left: 225px;}
+    main > .character > div > a:nth-of-type(3) > img{width: 86px; height: auto;}
+    main > .character > div > a:nth-of-type(4){top: 636px; left: 166px;}
+    main > .character > div > a:nth-of-type(4) > img{width: 80px; height: auto;}
+    main > .character > div > a:nth-of-type(5){top: 712px; left: 228px;}
+    main > .character > div > a:nth-of-type(5) > img{width: 79px; height: auto;}
+    main > .character > div > a:nth-of-type(6){top:730px; left: 123px;}
+    main > .character > div > a:nth-of-type(6) > img{width: 78px; height: auto;}
+    main > .character > div > a:nth-of-type(7){top: 730px; left: 27px;}
+    main > .character > div > a:nth-of-type(7) > img{width: 62px; height: auto;}
+    main > .character > div > a:nth-of-type(8){top: 802px; left: 201px;}
+    main > .character > div > a:nth-of-type(8) > img{width: 86px; height: auto;}
+    main > .character > div > a:nth-of-type(9){top: 817px; left: 95px;}
+    main > .character > div > a:nth-of-type(9) > img{width: 84px; height: auto;}
+    main > .character > div > a:nth-of-type(10){top: 815px; left: -8px;}
+    main > .character > div > a:nth-of-type(10) > img{width: 77px; height: auto;}
+    main > .character > div > a:nth-of-type(11){top: 648px; left: 49px;}
+    main > .character > div > a:nth-of-type(11) > img{width: 107px; height: auto;}
+    
+    main > .series{height: 1884px; background: #fff6fa;}
+    main > .series > .se{width: 345px;}
+    main > .series > .se > div{width: 168px; margin-bottom: 40px;}
+    main > .series > .se > div > a{}
+    main > .series > .se > div > a > img{width: 168px; height: auto;}
+    main > .series > .se > div > .title{font-size: 13px;}
+    main > .series > .se > div > p{text-align: justify; color: #231815;}
+    main > .series > .se > div > p:nth-of-type(2){font-size: 12px; width: 165px;}
+    main > .series > .se > img{width: 359px; height: auto;}
+
+    main > .gall{height: 1254px;}
+    main > .gall > h2{margin-bottom: 91px;}
+    main > .gall > div{width: 331px; flex-flow: row wrap;}
+    main > .gall > div > div > a > img{width: 158px; height: auto; outline: 3px; margin-bottom: 12px;}
+    main > .gall > a{width: 242px;}
+    main > .gall > a > img{width: 242px; height: auto;}
+
+    main > .store{height: 2150px;}
+    main > .store > div > h3{font-size: 36px; width: 255px; margin-left: 20px;}
+    main > .store > div:nth-of-type(1) > h3{width: 300px;}
+    main > .store > div > h3 > img{width: 124px; height: 124px;}
+    main > .store > a{width: 242px;}
+    main > .store > a > img{width: 242px; height: auto; margin-top: 10px;}
+    .product_wrap{width: 350px; margin: 0 50px; margin-bottom: 50px;}
+    .product_wrap figure > img{width: 160px; height: 160px;}
+    .product_wrap figure > figcaption{width: 160px; height: 118px; background: #fff;}
+    .product_wrap figure > figcaption > p{font-size: 14px;}
+    .product_wrap figure > figcaption > p:nth-of-type(1){max-width: 120px;}
+    
+    footer > section{top: 715px;}
+    footer > section > img{width: 300px; height: auto;}
+    footer > section > div > div{width: 335px; height: 55px;}
+    footer > section > div > div > a{font-size: 9px;}
+    footer > section > div > div > a:nth-of-type(1){width: 65px; height: 30px;}
+    footer > section > div > div > a:nth-of-type(5){width: 100px;}
+}

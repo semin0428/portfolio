@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "default.css";
+header{width: 100vw; height: 100vh; background: url("../img/background.jpg") no-repeat top left; background-size: cover; display: flex; justify-content: center; align-items: center;}
+header h1{width: 520px; height: 300px; background: url("../img/portfolio.svg") no-repeat center center; background-size: contain; text-indent: -9999999px; box-sizing: content-box; margin: 0 auto; filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .4));}
+header nav ul{width: 670px; margin: 0 auto; display: flex; justify-content: space-between;}
+header nav ul li a img{width: 310px; height: auto; filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .2));}
+header nav ul li:hover{transform: translateY(-7px); transition: all .06s; filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, .4));}
+header nav ul li:active{transform: translateY(-4px); transition: all .025s; filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .4));}
+
+
+/*------------------------------------ 모바일 -----------------------------------------------------*/
+@media screen and (max-width: 640px){
+    header h1{width: 320px;}
+    header nav ul{flex-direction: column; align-items: center;}
+    header nav ul li:nth-of-type(1){margin-bottom: 30px;}
+    header nav ul li a img{width: 260px; height: auto;}
+}

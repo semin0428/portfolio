@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{font-family: "Noto Sans KR";  font-weight: 500;}
+main{width: 100vw; height: 100vh; background: url("../img/background.jpg") no-repeat top left; background-size: cover;}
+main h2{background: url("../img/menu_title2.svg") no-repeat center center; text-indent: -99999px; padding: 45px; margin-bottom: 100px;}
+section{width: 600px; height: 500px; margin: 0 auto;}
+section div{width: 600px; height: 400px;}
+section .fade .border{overflow: hidden; border: 8px solid #fff; box-sizing: border-box; position: relative;}
+section div a img{width: 100%; height: 100%; object-fit: cover;}
+
+section .info{position: absolute; top: 0; width: 569px; height: 192px; background: rgba(0, 0, 0, 0.4); color: #fff; padding-top: 192px; padding-left: 15px; font-weight: 400; display: none;}
+section .border:hover .info{display: block;}
+
+.home{display: contents;}
+.home img{width: 95px; height: auto; margin: 50px auto;}
+.home:hover img{transform: translateY(-7px);  transition: all .1s;}
+.home:active img{transform: translateY(-3px);}
+
+
+/*------------------------------------ 모바일 -----------------------------------------------------*/
+@media screen and (max-width: 640px){
+    section{width: 500px; height: 300px;}
+    section div{width: 500px; height: 300px;}
+    section .fade .border{border: 5px solid #fff;}
+    section .info{width: 490px; height: 290px; padding-top: 145px; padding-left: 15px;}
+    .home img{width: 70px; height: auto; margin: 50px auto;}
+}
+@media screen and (max-width: 360px){
+    section{width: 315px; height: 200px;}
+    section div{width: 315px; height: 200px;}
+    section .info{width:305px; height: 190px; padding-top: 95px; padding-left: 15px;}
+}
